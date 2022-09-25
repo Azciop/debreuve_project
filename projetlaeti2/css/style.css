@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "macy";
+    src: url("../assets/fonts/Macy\'s\ lemonade.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +32,7 @@ figcaption {
     bottom: 20px;
     right: 30px;
     z-index: 98;
-    border: none;
+    border: 1px solid black;
     outline: none;
     background-color: #E5A893;
     cursor: pointer;
@@ -160,15 +165,13 @@ header {
 }
 
 #about p {
-    text-justify: ;
     margin-left: 40px;
     margin-top: 7px;
     font-size: 1.5vw;
 }
 
 .btn-about {
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 20px 50px;
     position: absolute;
     bottom: 0px;
@@ -204,6 +207,7 @@ header {
 
 #why h2 {
     padding-top: 40px;
+    margin: 0 20px;
     font-size: 40px;
     color: #7C3D0A;
     
@@ -322,6 +326,22 @@ header {
     margin-top: 20px;
 }
 
+.btn-about {
+    padding: 20px 50px;
+    font-weight: 100;   
+    border-bottom: #7C3D0A 3px solid;
+}
+
+.btn-about:hover {
+    transform: scale(1);
+    background-color: rgb(235, 133, 70);
+    border-bottom: none;
+}
+
+.btn-about a {
+    color: white;
+}
+
 .section-offers h2 {
     font-size: 40px;
     padding: 40px 0 0 0;
@@ -333,7 +353,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-family: 'macy', serif !important;
+    font-size: 3.5vh;
 }
 
 .section-offers i {
@@ -362,9 +383,10 @@ hr {
 
 .offers-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 5%;
+    gap: 20px;
 }
 
 .single-offer {
@@ -512,7 +534,7 @@ footer {
 
     header {
         height: 10vw;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
 
     #testimony figure {
@@ -554,5 +576,14 @@ footer {
         font-size: 3vw;
         margin: 0 2%;
     }
+    ul li a {
+        font-size: 1.8vh;
+    }
 
+}
+
+@media all and (max-width: 500px) {
+    ul li a {
+        font-size: 1.5vh;
+    }
 }
