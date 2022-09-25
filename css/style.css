@@ -326,19 +326,19 @@ header {
     margin-top: 20px;
 }
 
-.btn-about {
+.btn-offers {
     padding: 20px 50px;
     font-weight: 100;   
     border-bottom: #7C3D0A 3px solid;
 }
 
-.btn-about:hover {
+.btn-offers:hover {
     transform: scale(1);
     background-color: rgb(235, 133, 70);
     border-bottom: none;
 }
 
-.btn-about a {
+.btn-offers a {
     color: white;
 }
 
